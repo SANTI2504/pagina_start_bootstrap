@@ -159,7 +159,7 @@ header{
 /*portafolio*/
 .portafolio{
 	width: 100%;
-	height: 850px;
+	height: 950px;
 	background-color: #FFFFFF; 
 
 }
@@ -172,21 +172,26 @@ header{
 /*division del contenido-portafolio */
 .cont_port{
 	width: 100%;
-	height: 650px;
-	padding: 40px 100px;
+	max-width: 1100px;
+	margin: auto;
+	height: 750px;
+	padding: 40px 20px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* division cajas*/
 .caja_port{
-	width: 33.3%;
-	height: 50%;
+	width: 300px;
+	height: 250px;
 	float: left;
 	padding: 20px;
 }
 /*division imagen*/
 .item_port{
-	width:100%;
-	height:100%;
+	width: auto;
+	height: 100%;
 	border-radius: 20px;
 	background-size:100% 100%;
 	cursor: pointer;
@@ -201,7 +206,7 @@ header{
 	color: #fff;
 	font-size: 4em;
 	text-align: center;
-	padding-top: 80px;
+	padding-top: 60px;
 	opacity: 0;
 }
 
@@ -235,11 +240,11 @@ header{
 	background-image: url('../img/submarino.png');
 }
 
+/*modal*/
+
 /*division superior*/
 .modal_cont_sup{
 	width: 100%;
-	height: 220px;
-
 }
 
 .modal-content .modal_cerrar{
@@ -255,15 +260,14 @@ header{
 
 .modal_cont_body{
 	width: 100%;
-	height: 750px;
-	padding: 20px 200px;
 
 }
 /*division img-body*/
 .modal_body_img{
-	width: 100%;
-	height: 80%;
+	width: 80%;
+	margin:auto;
 	text-align: center;
+	padding: 30px 10%;
 }
 
 .modal_body_img img{
@@ -276,20 +280,17 @@ header{
 
 .modal_body_text{
 	width: 100%;
-	height: 20%;
+	height: 15%;
 	text-align: center;
-	padding: 5px 0;
+	padding: 5px 50px;
 }
 
 /*divisiom footer*/
 
 .modal_footer{
 	width: 100%;
-	height: 80px;
 	text-align: center;
 	padding: 20px
-
-
 }
 
 .modal_footer button{
@@ -313,18 +314,22 @@ header{
 }
 
 .about .text_about{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 	width: 100%;
 	height: 320px;
-	padding:40px 300px;
+	padding:40px 20px;
 	float: left;	
 }
 
 .text_about .text_right, .text_about .text_left{
-	width: 50%;
+	width: 320px;
 	height: 100%;
 	float:left;
 	padding: 20px;
 	color: #fff;
+	text-align: justify;
 }
 
 .about .boton{
@@ -361,10 +366,11 @@ header{
 }
 
 .form_contact{
-	width: 100%;
+	margin:auto;
+	width: 80%;
 	height: 680px;
-	padding: 30px 300px;
-	float: left;
+	padding: 30px 15px;
+
 }
 
 .form_contact_body{
@@ -404,7 +410,7 @@ header{
 
 }
 
-
+/*informacion-contacto*/
 .info_contact{
 	width: 100%;
 	height: 320px;
@@ -417,7 +423,7 @@ header{
 	height: 100%;
 	float:left;
 	text-align: center;
-	padding: 80px 50px;
+	padding: 50px 30px;
 	color: #fff;
 }
 
@@ -427,7 +433,7 @@ header{
 
 .info_contact .info_div i{
 	padding: 0 10px;
-	font-size: 3em;
+	font-size: 2.5em;
 	cursor: pointer;
 }
 
@@ -454,7 +460,10 @@ footer{
 /*tablet*/
 @media only screen and (max-width: 992px) {
 
-/*navegador*/
+/*clases especiales*/
+.subtitulo{
+	font-size: 2rem;
+}
 
 /*titulo*/
 .titulo {
@@ -463,9 +472,7 @@ footer{
 	padding: 20px 20px;
 	text-align: left;
 	float: left;
-
 }
-
 
 /*menu del navegador*/
 
@@ -507,7 +514,7 @@ footer{
 	width: 100%;
 	opacity: 0;
 	visibility: hidden;
-	transition: all 500ms ease;
+
 
 }
 
@@ -534,49 +541,124 @@ nav ul li a:active, nav ul li a:focus {
 /*encabezado*/
 header{
 	width: 100%;
-
-	background: none;
 }
 
 /*division de la imagen-encabezado*/
 .img_header{
-	width: 100%;
-	height: 60%;
-	padding-top: 180px;
-	text-align: center;
+	padding-top: 210px;
 }
 
 .img_header img{
-	width: 230px;
-	height: 230px;
-	border-radius: 50%;
+	width: 200px;
+	height: 200px;
 }
 
 /*division del texto-encabezado*/
-.text_header{
-	width: 100%;
-	height:	40%;
-	text-align: center;
-}
-
 .text_header .sub_header {
-	font-size: 3em;
-	color: #fff;
-
-
+	font-size: 2.5rem;
 }
+
 .text_header .p_header {
+	font-size: 1.8rem;
+}
+
+
+
+/*portafolio*/
+.portafolio{
+	height: 1050px;
+}
+
+
+/*division del contenido-portafolio */
+.cont_port{
+	height: 850px;
+	padding: 40px 10%;
+}
+
+/* division cajas*/
+.caja_port{
+	width: 250px;
+	height: 200px;
+	padding: 10px;
+	margin: 10px;
+}
+
+/*opacidad de la imagen*/
+.item_opa{
+	padding-top: 42px;
+}
+
+
+/*contacto*/
+.contact{
+	height: 1460px;
+}
+/*informacion-contacto*/
+.info_contact{
+	height: 580px;
+	padding: 0 30px;
+}
+
+.info_contact .info_div{
+	width: 100%;
+	height: 33.33%;
+}
+
+.info_contact .info_div h2{
+	padding-bottom: 10px;
+}
+
+.info_contact .info_div i{
+	padding: 0 10px;
+	font-size: 2.5em;
+	cursor: pointer;
+}
+
+.info_contact .info_div i:hover{
+	color: 	#1ABC9C;
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 674px) {
+
+/*portafolio*/
+.portafolio{
+	height: 1570px;
+}
+
+
+/*division del contenido-portafolio */
+.cont_port{
+	height: 1370px;
+	padding: 40px 10%;
+}
+
+/*acerca de*/
+.about{
+	height: 870px;		
+}
+
+.about .subtitulo{
 	color: #fff;
-	padding-top: 40px;
-	font-size: 2em;
+}
+
+.about .text_about{
+	height: 520px;
+}
+
+.text_about .text_right, .text_about .text_left{
+	width: 80%;
+	height: 50%;
 
 }
 
 
-
 }
-
-
 
 
 
