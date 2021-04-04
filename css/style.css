@@ -464,7 +464,7 @@ footer{
 .subtitulo{
 	font-size: 2rem;
 }
-
+/*navegador*/
 /*titulo*/
 .titulo {
 	width: 80%;
@@ -505,7 +505,7 @@ footer{
 	visibility: visible;
 	opacity: 1;
 	transition: all 500ms ease;
-	height: 208%;
+	height: 100%;
 }
 
 /*nivel 0*/
