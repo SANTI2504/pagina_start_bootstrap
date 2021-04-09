@@ -478,18 +478,21 @@ footer{
 
 .menu{
 	display: inline-block;
-	position: relative;
+	position: absolute;
 	color: #fff;
 	background: #1ABC9C;
 	border-radius: 5px;
 	cursor: pointer;
 	border: 1px solid #fff;
 	padding: 5px 10px;
-	top: 18px; 
+	top: 25%;
+	right: 3%;
+
 }
 
 .menu i{
 	padding-right: 5px;
+
 }
 
 .menu:hover {
@@ -626,6 +629,36 @@ header{
 
 @media only screen and (max-width: 674px) {
 
+/*clases especiales*/
+.subtitulo{
+	font-size: 1.5rem;
+}
+/*navegador*/
+/*titulo*/
+.titulo {
+	font-size: 0.8rem;
+}
+
+.menu{
+	font-size: 0.9em;
+}
+
+/*encabezado*/
+header{
+	font-size: 1.5rem;
+}
+
+/*division del texto-encabezado*/
+
+.text_header .sub_header {
+	font-size: 1em;
+
+}
+.text_header .p_header {
+	font-size: 1em;
+
+}
+
 /*portafolio*/
 .portafolio{
 	height: 1570px;
@@ -640,7 +673,8 @@ header{
 
 /*acerca de*/
 .about{
-	height: 870px;		
+	height: 900px;	
+	font-size: 0.8em;	
 }
 
 .about .subtitulo{
@@ -648,11 +682,11 @@ header{
 }
 
 .about .text_about{
-	height: 520px;
+	height: 550px;
 }
 
 .text_about .text_right, .text_about .text_left{
-	width: 80%;
+	width: 100%;
 	height: 50%;
 
 }
